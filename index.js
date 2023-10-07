@@ -41,25 +41,25 @@ function stopWatch() {
             second = 0;
         }
  
-        let hrString = hour;
-        let minString = minute;
-        let secString = second;
+        let hrS = hour;
+        let minS = minute;
+        let secS = second;
  
         if (hour < 10) {
-            hrString = "0" + hrString;
+            hrS = "0" + hrS;
         }
  
         if (minute < 10) {
-            minString = "0" + minString;
+            minS = "0" + minS;
         }
  
         if (second < 10) {
-            secString = "0" + secString;
+            secS = "0" + secS;
         }
  
-        document.getElementById('hr').innerHTML = hrString;
-        document.getElementById('min').innerHTML = minString;
-        document.getElementById('sec').innerHTML = secString;
+        document.getElementById('hr').innerHTML = hrS;
+        document.getElementById('min').innerHTML = minS;
+        document.getElementById('sec').innerHTML = secS;
         setTimeout(stopWatch, 1000);
     }
 }
