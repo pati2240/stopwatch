@@ -60,6 +60,6 @@ function stopWatch() {
         document.getElementById('hr').innerHTML = hrString;
         document.getElementById('min').innerHTML = minString;
         document.getElementById('sec').innerHTML = secString;
-        setInterval(stopWatch, 1000);
+        setTimeout(stopWatch, 1000);
     }
 }
