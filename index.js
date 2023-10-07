@@ -20,6 +20,8 @@ stop.addEventListener('click', function () {
 });
  
 reset.addEventListener('click', function () {
+    start.disabled=false;
+    stop.disabled=true;
     timer = false;
     hour = 0;
     minute = 0;
